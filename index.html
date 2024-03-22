@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+      <div class="Headerimg"><img src="./Assets/HiringmineLogo.jfif" alt="" width="100px"></div>
+        <div class="Searchdetails">    
+            <span class="JOB">Jobs</span><input type="text" class="inputValue" placeholder="Search Job title or companies">
+            <div><button class="searchBtn" onclick="apiFunction()"><img src="./Assets/search.png" alt=""  class="searchicon" width="30px"></button></div>
+        </div>
+
+        <div class="navbar">
+            <div class="dropdown">
+              <button class="dropbtn" onclick="DatePosted()">Date Posted
+              &nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="DatePostedDropdown">
+              <a href="#" >Anytime</a>
+              <a href="#">1 months</a>
+              <a href="#">Last 7 days</a>
+              <a href="#">Past 24 hours</a>
+              <button class="clear">Clear</button>
+              <button class="SR">Show Results</button>
+              </div>
+            </div> 
+        
+            <div class="dropdown">
+              <button class="dropbtn" onclick="JobType()">Job Type
+              &nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="JobTypeDropdown">
+              <a href="#">Full Time</a>
+              <a href="#">Part Time</a>
+              <a href="#">Contract</a>
+              <button class="clear">Clear</button>
+              <button class="SR">Show Results</button>
+              </div>
+            </div> 
+     
+            <div class="dropdown">
+              <button class="dropbtn" onclick="Seniority()">Seniority Level
+              &nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="SeniorityDropdown">
+              <a href="#">Mid Level</a>
+              <a href="#">Senior Level</a>
+              <a href="#">Associate</a>
+              <a href="#">Internship</a>
+              <a href="#">Fresher</a>
+              <button class="clear">Clear</button>
+              <button class="SR">Show Results</button>
+              </div>
+            </div> 
+        
+
+            <div class="dropdown">
+              <button class="dropbtn" onclick="Remote()">On-Site/Remote
+               &nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="RemoteDropdown">
+              <a href="#">Onsite</a>
+              <a href="#">Remote</a>
+              <a href="#">Hybird</a>
+              <button class="clear">Clear</button>
+              <button class="SR">Show Results</button>
+              </div>
+            </div> 
+      
+            <div class="dropdown">
+              <button class="dropbtn" onclick="SalaryRange()">Salary Range
+              &nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="SalaryRangeDropdown">
+              <a href="#">0 - 20,000 PKR</a>
+              <a href="#">20,000 - 50,000 PKR</a>
+              <a href="#">50,000 - 100,000 PKR</a>
+              <a href="#">100,000 - 200,000 PKR</a>
+              <a href="#">200,000 - 300,000 PKR</a>
+              <a href="#">300,000 - 400,000 PKR</a>
+              <a href="#">400,000 - 500,000 PKR</a>
+              <a href="#">500,000+  PKR</a>
+              <button class="clear">Clear</button>
+              <button class="SR">Show Results</button>
+              </div>
+            </div>
+
+        
+            <div class="dropdown">
+              <button class="dropbtn" onclick="Experience()">Experience
+              &nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="ExperienceDropdown">
+              <a href="#">0 - 1 Year</a>
+              <a href="#">1 - 2 Years</a>
+              <a href="#">2 - 3 Years</a>
+              <a href="#">3 - 4 Years</a>
+              <a href="#">4 - 5 Years</a>
+              <a href="#">5 - 6 Years</a>
+              <a href="#">6 - 7 Years</a>
+              <a href="#">7 - 8 Years</a>
+              <a href="#">8 - 9 Years</a>
+              <a href="#">9 - 10 Years</a>
+              <button class="clear">Clear</button>
+              <button class="SR">Show Results</button>
+              </div>
+            </div> 
+          </div>
+    </div>
+
+    <!-- Rounded switch -->
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+
+<button id="Resetbtn">Reset</button>
+
+<div class="row myRow">
+  <!-- <div>
+    <div>
+      <h6 id="companyName">Company Name</h6>
+      <img src="" alt="">
+    </div>
+
+        <h5 id="Designation">Designation</h5>
+        <h5 id="Salary">Salary</h5>
+
+      <div>
+          <button id="btn">Onsite</button>
+
+        <div>
+          <h6 id="City">City</h6>
+          <h6 id="Country">Country</h6>
+        </div>
+
+      </div>
+
+        <div>
+            <p id="Views">Views</p>
+        </div>
+  </div>
+</div> -->
+
+    <script src="app.js"></script>
+</body>
+</html>
